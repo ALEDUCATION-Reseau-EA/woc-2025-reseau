@@ -11,9 +11,9 @@ export PROXMOX_PUBLIC_IP=$PROXMOX_PUBLIC_IP
 cd terraform
 terraform init
 terraform apply -auto-approve \
-  -var "pm_api_url=$API_URL" \
+  -var "pm_api_url=$PM_API_URL" \
   -var "pm_api_token_id=$PM_API_TOKEN_ID" \
-  -var "pm_api_token_secret=$API_TOKEN_ID" \
+  -var "pm_api_token_secret=$PM_API_TOKEN_SECRET" \
   -var "proxmox_public_ip=$PROXMOX_PUBLIC_IP"
 
 # Mettre à jour l’inventaire Ansible avec l’IP publique de Proxmox

@@ -6,3 +6,4 @@
 packer_cache/
 *.pem
 "@ | Out-File -Encoding utf8 .gitignore
+.env
